@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:provider/provider.dart';
+import 'package:unshelled/app/core/utils/provider.dart';
+import 'package:unshelled/app/modules/home/view/beer_view.dart';
 
-Future main() async {
-  await dotenv.load(fileName: "keys.env");
+void main() {
   runApp(const MyApp());
 }
 
@@ -13,17 +13,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
-      providers: const [
-        // ChangeNotifierProvider(create: (_) => LocationViewModel()),
-        // ChangeNotifierProvider(create: (_) => CityViewModel())
-      ],
+     providers: AppProviders.providers,
       child: MaterialApp(
-        title: 'Unshelled court',
+        title: 'Unshelled Assessment',
         theme: ThemeData(
-          colorScheme: ColorScheme.fromSeed(seedColor: Colors.redAccent),
-          useMaterial3: true,
+          primarySwatch: Colors.blue,
         ),
-        home: const SplashScreen(),
+        home: const BeerListView(),
       ),
     );
   }
