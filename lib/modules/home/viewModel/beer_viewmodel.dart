@@ -1,8 +1,8 @@
 import 'package:flutter/foundation.dart';
-import 'package:unshelled/app/modules/home/model/beer_model.dart';
+import 'package:unshelled/data/model/beer_model.dart';
 
-import '../../../core/utils/logger.dart';
-import '../repository/beer_impl.dart';
+import '../../../utils/logger.dart';
+import '../../../data/repository/beer_impl.dart';
 
 class BeerListModel extends ChangeNotifier {
   BeerListModel() {

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:unshelled/app/modules/home/components/beer_items.dart';
-import 'package:unshelled/app/modules/home/model/beer_model.dart';
-import 'package:unshelled/app/modules/home/viewModel/beer_viewmodel.dart';
+import 'package:unshelled/modules/home/components/beer_items.dart';
+import 'package:unshelled/data/model/beer_model.dart';
+import 'package:unshelled/modules/home/viewModel/beer_viewmodel.dart';
 
-import '../../../core/data/network/conectivity.dart';
+import '../../../data/service/conectivity.dart';
 
 class BeerListView extends StatelessWidget {
   const BeerListView({super.key});

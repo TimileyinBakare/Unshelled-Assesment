@@ -1,7 +1,7 @@
 // beer_detail_helpers.dart
 
 import 'package:flutter/material.dart';
-import 'package:unshelled/app/modules/home/model/beer_model.dart';
+import 'package:unshelled/data/model/beer_model.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 void showBeerDetail(BuildContext context, Beermodel beer) {

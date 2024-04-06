@@ -1,10 +1,10 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'package:unshelled/app/core/data/apis.dart';
-import 'package:unshelled/app/modules/home/model/beer_model.dart';
+import 'package:unshelled/data/apis.dart';
+import 'package:unshelled/data/model/beer_model.dart';
 
-import '../../../core/utils/error.dart';
-import '../../../core/utils/logger.dart';
+import '../../utils/error.dart';
+import '../../utils/logger.dart';
 import 'interface/beer_repo.dart';
 
 class BeerRepositoryImpl implements BeerRepository {

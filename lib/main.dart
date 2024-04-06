@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:unshelled/app/core/utils/provider.dart';
-import 'package:unshelled/app/modules/home/view/beer_view.dart';
+import 'package:unshelled/data/service/conectivity.dart';
+import 'package:unshelled/modules/home/viewModel/beer_viewmodel.dart';
+import 'package:unshelled/modules/home/view/beer_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +14,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
-     providers: AppProviders.providers,
+     providers: [
+       ChangeNotifierProvider(create: (_) => BeerListModel()),
+    ChangeNotifierProvider(create: (_) => NetworkMonitor()),
+     ],
       child: MaterialApp(
         title: 'Unshelled Assessment',
         theme: ThemeData(
