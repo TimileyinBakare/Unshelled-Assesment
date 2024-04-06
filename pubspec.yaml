@@ -15,7 +15,6 @@ dependencies:
 
   cupertino_icons: ^1.0.6
   provider: ^6.1.1
-  flutter_dotenv: ^5.0.2
   logger: ^2.0.2+1
   http: ^1.2.0
   mockito: ^5.4.4
